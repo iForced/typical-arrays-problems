@@ -1,6 +1,6 @@
 
 exports.min = function (array) {
-    if (!(array.length) || array.length == 0) {
+    if (array == undefined || array.length == 0) {
       return 0;
   }
   let res = Number.POSITIVE_INFINITY;
@@ -13,7 +13,7 @@ exports.min = function (array) {
 }
 
 exports.max = function (array) {
-    if (!(array.length) || array.length == 0) {
+    if (array == undefined || array.length == 0) {
       return 0;
   }
   let res = Number.NEGATIVE_INFINITY;
@@ -26,7 +26,7 @@ exports.max = function (array) {
 }
 
 exports.avg = function (array) {
-    if (!(array.length) || array.length == 0) {
+    if (array == undefined || array.length == 0) {
       return 0;
   }
   let res = 0;
